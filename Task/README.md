@@ -24,5 +24,118 @@ This simulates **basic monitoring logic** used in real production environments.
 - Git & GitHub
 
 ---
+Task/
+│
+├── system_health.py
+└── README.md
 
+---
+
+## 🧠 What This Script Does
+The script performs the following steps:
+
+1. Takes user-defined thresholds for:
+   - CPU usage
+   - Memory usage
+   - Disk usage
+2. Fetches current system metrics using `psutil`
+3. Compares each metric with its threshold
+4. Prints:
+   - ✅ OK message if usage is within limit
+   - ⚠️ ALERT message if usage exceeds threshold
+
+---
+
+## ▶️ How to Run
+
+### Step 1: Navigate to Task directory
+```bash
+cd Task
+Step 2: Run the script
+python system_health.py
+Step 3: Enter threshold values when prompted
+📊 Sample Output
+Enter CPU Threshold (%): 50
+Enter Memory Threshold (%): 70
+Enter Disk Threshold (%): 80
+
+--- System Health Status ---
+CPU Usage: 30.4%
+✅ CPU usage is within limit
+---------------------------
+Memory Usage: 73.0%
+⚠️ ALERT: Memory usage crossed threshold!
+---------------------------
+Disk Usage: 32.5%
+✅ Disk usage is within limit
+🧩 Concepts Covered
+
+User input handling
+
+Conditional statements (if / else)
+
+Python functions
+
+for-loops
+
+System monitoring fundamentals
+
+DevOps automation thinking
+
+🔍 Why This Task Matters
+
+In real DevOps workflows:
+
+Servers are monitored continuously
+
+Threshold-based alerts are critical
+
+Automation reduces manual intervention
+
+This script forms the foundation for:
+
+Monitoring tools
+
+Alerting systems
+
+CI/CD health checks
+
+Infrastructure automation
+
+🚀 Future Enhancements
+
+This script can be extended to:
+
+Send email alerts
+
+Run continuously using loops
+
+Log metrics to files
+
+Monitor remote servers
+
+Integrate with cloud platforms
+
+✅ Task Status
+
+✔️ Task completed
+✔️ Output visible in terminal
+✔️ Clean & readable code
+✔️ Beginner-friendly implementation
+
+👨‍💻 Author
+
+Mustansar Maqsood
+Python for DevOps – AI Edition
+
+🧭 Next Step
+
+➡️ Day-02 will cover:
+
+Logging
+
+File handling
+
+Advanced automation patterns
 ## 📂 Folder Structure
+

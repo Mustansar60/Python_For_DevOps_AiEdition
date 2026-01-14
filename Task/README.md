@@ -1,128 +1,28 @@
-📂 Project Structure
-Task/
-│
-├── system_health.py   # Main monitoring script
-└── README.md          # Task documentation
+# ✅ Day-01 Task: System Health Monitoring with Python
+### Python for DevOps – AI Edition
+---
+## 👋 Welcome
+This task marks the **first practical step** in the *Python for DevOps* journey.  
+Here, we use Python to monitor **system health metrics** — a core responsibility of every DevOps engineer.
 
-🧠 How the Script Works
+This task is **beginner-friendly**, clean, and focused on building the **right DevOps mindset**.
+---
+## 🎯 Task Goal
+The objective of this task is to:
 
-The script follows these steps:
+- Take threshold values from the user
+- Fetch real-time system metrics
+- Compare metrics with thresholds
+- Display alerts directly in the terminal
 
-1️⃣ Asks the user to define threshold values for:
+This simulates **basic monitoring logic** used in real production environments.
+---
+## 🛠️ Tools & Technologies
+- Python 3
+- psutil library
+- Terminal / PowerShell
+- Git & GitHub
 
-CPU usage
+---
 
-Memory usage
-
-Disk usage
-
-2️⃣ Collects real-time system metrics using psutil
-
-3️⃣ Compares current usage with the given thresholds
-
-4️⃣ Prints:
-
-✅ Normal status if usage is within limit
-
-⚠️ Alert message if usage exceeds the threshold
-
-▶️ How to Run the Script
-Step 1: Move into the Task directory
-cd Task
-
-Step 2: Run the script
-python system_health.py
-
-Step 3: Enter threshold values when prompted
-📊 Sample Output
-Enter CPU Threshold (%): 50
-Enter Memory Threshold (%): 70
-Enter Disk Threshold (%): 80
-
---- System Health Status ---
-CPU Usage: 30.4%
-✅ CPU usage is within limit
----------------------------
-Memory Usage: 73.0%
-⚠️ ALERT: Memory usage crossed threshold!
----------------------------
-Disk Usage: 32.5%
-✅ Disk usage is within limit
-
-🧩 Concepts Covered
-
-This task covers the following Python & DevOps concepts:
-
-User input using input()
-
-Conditional logic (if / else)
-
-Python functions
-
-for-loops
-
-System monitoring basics
-
-Automation mindset for DevOps
-
-🔍 Why This Task Matters (DevOps Perspective)
-
-In real DevOps environments:
-
-Servers are continuously monitored
-
-Alerts are triggered when thresholds are crossed
-
-Automation scripts reduce manual work
-
-👉 This script is a foundation for:
-
-Server monitoring tools
-
-Alerting systems
-
-Health checks in CI/CD pipelines
-
-🚀 Future Improvements
-
-In upcoming tasks, this script can be extended to:
-
-Send email alerts
-
-Run continuously using loops
-
-Log data to files
-
-Monitor remote servers
-
-Integrate with Slack or cloud platforms
-
-✅ Task Status
-
-✔️ Task completed successfully
-✔️ Clean & readable code
-✔️ Output visible in terminal
-✔️ Beginner-friendly implementation
-
-👨‍💻 Author
-
-Mustansar Maqsood
-Python for DevOps – AI Edition
-
-🧭 What’s Next?
-
-➡️ Day-02:
-
-Logging
-
-File handling
-
-Better automation patterns
-
-🔥 Last Step (Git)
-
-After adding this README file:
-
-git add Task/README.md
-git commit -m "Added detailed README for Day-01 Task"
-git push origin master
+## 📂 Folder Structure

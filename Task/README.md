@@ -25,8 +25,9 @@ This simulates **basic monitoring logic** used in real production environments.
 
 ---
 Task/
-│
+
 ├── system_health.py
+
 └── README.md
 
 ---

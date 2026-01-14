@@ -1,14 +1,14 @@
-📂 Files in This Task
+📂 Project Structure
 Task/
 │
-├── system_health.py
-└── README.md
+├── system_health.py   # Main monitoring script
+└── README.md          # Task documentation
 
-🧠 What the Script Does
+🧠 How the Script Works
 
-The script performs the following steps:
+The script follows these steps:
 
-Takes threshold values for:
+1️⃣ Asks the user to define threshold values for:
 
 CPU usage
 
@@ -16,48 +16,46 @@ Memory usage
 
 Disk usage
 
-Fetches current system usage using psutil
+2️⃣ Collects real-time system metrics using psutil
 
-Compares usage with thresholds
+3️⃣ Compares current usage with the given thresholds
 
-Displays alerts if any threshold is crossed
+4️⃣ Prints:
+
+✅ Normal status if usage is within limit
+
+⚠️ Alert message if usage exceeds the threshold
 
 ▶️ How to Run the Script
-
-1️⃣ Activate virtual environment (if any)
-
-2️⃣ Navigate to Task folder:
-
+Step 1: Move into the Task directory
 cd Task
 
-
-3️⃣ Run the script:
-
+Step 2: Run the script
 python system_health.py
 
-
-4️⃣ Enter threshold values when prompted.
-
+Step 3: Enter threshold values when prompted
 📊 Sample Output
 Enter CPU Threshold (%): 50
 Enter Memory Threshold (%): 70
 Enter Disk Threshold (%): 80
 
 --- System Health Status ---
-CPU Usage: 30%
+CPU Usage: 30.4%
 ✅ CPU usage is within limit
 ---------------------------
-Memory Usage: 73%
+Memory Usage: 73.0%
 ⚠️ ALERT: Memory usage crossed threshold!
 ---------------------------
-Disk Usage: 32%
+Disk Usage: 32.5%
 ✅ Disk usage is within limit
 
 🧩 Concepts Covered
 
-User input handling
+This task covers the following Python & DevOps concepts:
 
-Conditional statements (if / else)
+User input using input()
+
+Conditional logic (if / else)
 
 Python functions
 
@@ -65,49 +63,66 @@ for-loops
 
 System monitoring basics
 
-DevOps automation mindset
+Automation mindset for DevOps
 
-🚀 DevOps Perspective
+🔍 Why This Task Matters (DevOps Perspective)
 
-This script is a foundation for:
+In real DevOps environments:
 
-Server monitoring
+Servers are continuously monitored
+
+Alerts are triggered when thresholds are crossed
+
+Automation scripts reduce manual work
+
+👉 This script is a foundation for:
+
+Server monitoring tools
 
 Alerting systems
 
-Automation scripts
+Health checks in CI/CD pipelines
 
-CI/CD health checks
+🚀 Future Improvements
 
-In future tasks, this can be extended to:
+In upcoming tasks, this script can be extended to:
 
 Send email alerts
 
-Monitor continuously
+Run continuously using loops
 
-Run as a cron job
+Log data to files
 
-Integrate with Slack or cloud servers
+Monitor remote servers
+
+Integrate with Slack or cloud platforms
 
 ✅ Task Status
 
 ✔️ Task completed successfully
+✔️ Clean & readable code
 ✔️ Output visible in terminal
-✔️ Beginner-friendly and clean code
+✔️ Beginner-friendly implementation
 
 👨‍💻 Author
 
 Mustansar Maqsood
 Python for DevOps – AI Edition
 
-🔥 Next Step
+🧭 What’s Next?
 
-After this task, we move towards:
+➡️ Day-02:
 
 Logging
 
 File handling
 
-Email alerts
+Better automation patterns
 
-Advanced automation
+🔥 Last Step (Git)
+
+After adding this README file:
+
+git add Task/README.md
+git commit -m "Added detailed README for Day-01 Task"
+git push origin master
